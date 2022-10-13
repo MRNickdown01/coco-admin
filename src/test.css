@@ -1,0 +1,53 @@
+.transactionfill {
+  display: flex;
+  justify-content: center;
+}
+.addbutton {
+  display: flex;
+}
+.cardinput {
+  display: flex;
+
+  row-gap: 30px;
+}
+
+.formop1 {
+  width: 300px;
+  height: 50px;
+  position: relative;
+}
+.formop1 input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #1c5a40;
+  border-radius: 10px;
+  outline: none;
+  padding: 0px 10px;
+}
+.formop1 label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: rgb(22, 22, 22);
+  text-transform: capitalize;
+  font-size: 18px;
+  transition: top 0.3s;
+  padding: 0 5px;
+}
+.formop1 input:focus ~ label {
+  top: -12px;
+  background-color: #fff;
+}
+.form2 {
+  display: flex;
+  justify-content: center;
+}
+.inputfatch {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.submitbuttonform {
+  display: inline-flex;
+}

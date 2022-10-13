@@ -1,0 +1,36 @@
+<div className="transaction-card">
+  <div class="card w-75 transactionCardColor">
+    <div class="card-body transactionbody">
+      <div className="table1">
+        <table>
+          <tr>
+            <th>Customer’s Name</th>
+            <th>Customer’s Email</th>
+            <th>Brand Name</th>
+          </tr>
+          <tr>
+            <td>Romil Meghani</td>
+            <td>romilmeghani@gmail.com</td>
+            <td>Sublime Life</td>
+          </tr>
+        </table>
+      </div>
+      <div className="table2">
+        <table>
+          <tr>
+            <th>% for Customer</th>
+            <th>% for Social</th>
+            <th>Payout Policy</th>
+            <th>Return Period</th>
+          </tr>
+          <tr>
+            <td>20%</td>
+            <td>20%</td>
+            <td>10 Days</td>
+            <td>10 Days</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
