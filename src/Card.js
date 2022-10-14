@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Card.css";
-import Test from "./Test";
 import { Button, Input } from "./Components/Button.style";
 const Card = () => {
   const [show, setShow] = useState(false);
@@ -28,23 +27,27 @@ const Card = () => {
                     <h5 className="card-title">Brand</h5>
                     <div className="card-info">
                       <div className="card-button">
-                        <Button
-                          onClick={handleClick}
-                          backgroundColor="#0A3724"
-                          borderRadius="10px"
-                          color="#fff"
-                        >
-                          Add New
-                        </Button>
+                        <a href="/test">
+                          <Button
+                            onClick={handleClick}
+                            backgroundColor="#0A3724"
+                            borderRadius="10px"
+                            color="#fff"
+                          >
+                            Add New
+                          </Button>
+                        </a>
                       </div>
                       <div className="card-button2">
-                        <Button
-                          backgroundColor="#92B9A8"
-                          borderRadius="4px"
-                          border="2px dashed #0A3724"
-                        >
-                          View List
-                        </Button>
+                        <a href="viewlist">
+                          <Button
+                            backgroundColor="#92B9A8"
+                            borderRadius="4px"
+                            border="2px dashed #0A3724"
+                          >
+                            View List
+                          </Button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -60,21 +63,24 @@ const Card = () => {
                   <div class="card-body">
                     <h5 className="card-title">Transaction</h5>
                     <div className="card-info">
-                      <Button
-                        backgroundColor="#0A3724"
-                        borderRadius="10px"
-                        color="#fff"
-                      >
-                        Add New
-                      </Button>
-                      <Button
-                        backgroundColor="#92B9A8"
-                        borderRadius="4px"
-                        color="#fff"
-                        border="2px dashed #0A3724"
-                      >
-                        View List
-                      </Button>
+                      <a href="/transaction">
+                        <Button
+                          backgroundColor="#0A3724"
+                          borderRadius="10px"
+                          color="#fff"
+                        >
+                          Add New
+                        </Button>
+                      </a>
+                      <a href="/transactionlist">
+                        <Button
+                          backgroundColor="#92B9A8"
+                          borderRadius="4px"
+                          border="2px dashed #0A3724"
+                        >
+                          View List
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </div>

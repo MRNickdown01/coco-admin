@@ -51,6 +51,14 @@
 .submitbuttonform {
   display: inline-flex;
 }
+.rounded-circle {
+  width: 80px;
+}
+.table > thead > tr > th {
+  color: #1c5a40;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
 @media screen and (max-width: 468px) {
   .transactionfill {
     flex-direction: column;
