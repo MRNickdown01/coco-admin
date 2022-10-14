@@ -20,7 +20,7 @@ const Card = () => {
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="https://cdn.pixabay.com/photo/2016/03/28/18/07/micky-mouse-1286470_960_720.jpg"
+                    src="https://images.squarespace-cdn.com/content/v1/57ec45673e00be08c53b9142/1481488248167-IGINL272OSZD4S8HKH9H/btb-brands-wall_share.jpg?format=2500w"
                     alt="Card image cap"
                   />
                   <div class="card-body">
@@ -57,7 +57,7 @@ const Card = () => {
                 <div class="card">
                   <img
                     class="card-img-top"
-                    src="https://cdn.pixabay.com/photo/2016/03/28/18/07/micky-mouse-1286470_960_720.jpg"
+                    src="https://images.squarespace-cdn.com/content/v1/57ec45673e00be08c53b9142/1481488248167-IGINL272OSZD4S8HKH9H/btb-brands-wall_share.jpg?format=2500w"
                     alt="Card image cap"
                   />
                   <div class="card-body">
@@ -87,6 +87,14 @@ const Card = () => {
               </div>
             </div>
           </div>
+          <a href="/dashboard">
+            <Button
+              type="button"
+              className="d-flex-justify-content-center mt-5"
+            >
+              Dashboard
+            </Button>
+          </a>
         </div>
       </section>
     </>

@@ -6,6 +6,7 @@ import Test from "./Test";
 import TransactionList from "./TransactionList";
 import AddList from "./AddList";
 import Transaction from "./Transaction";
+import Dashboard from "./Dashboard";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/transaction" element={<Transaction />} />
           <Route path="/viewlist" element={<AddList />} />
           <Route path="/transactionlist" element={<TransactionList />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>

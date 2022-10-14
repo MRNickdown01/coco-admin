@@ -28,7 +28,7 @@ function Transaction() {
                 color="#fff"
                 borderRadius="10px"
               >
-                Fatch
+                Fetch
               </Button>
             </div>
           </div>
@@ -81,13 +81,16 @@ function Transaction() {
             </div>
           </div>
           <div className="transactionfill mt-5">
-            <div className="cardinput">
-              <div className="formop1">
-                <input type="text" required />
-                <label for="">Status</label>
-              </div>
+            {/* <div className="cardinput"> */}
+            <div className="formop1">
+              <select id="cars" name="cars">
+                <option value="volvo">Status</option>
+                <option value="saab">Saab</option>
+              </select>
             </div>
           </div>
+          {/* </div> */}
+
           <div className="d-flex justify-content-start mt-3">
             <Button backgroundColor="#0A3724" color="#fff" borderRadius="10px">
               Save

@@ -1,6 +1,14 @@
 h3 {
   color: #1c5a40;
-  font-family: "Mulish", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 31px;
+  font-weight: 800;
+}
+h5 {
+  color: #0a3724;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  line-height: 55px;
 }
 section {
   background: #92b9a8;
@@ -36,9 +44,32 @@ section {
 }
 .card-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Uploade";
+  display: inline-block;
+  background: #92b9a8;
+  border: 2px dashed #0a3724;
+  font-family: "Be Vietnam Pro", sans-serif;
+  border-radius: 4px;
+  padding: 5px 8px;
+  color: #0a3724;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border: 2px dashed #0a3724;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
 /* test page csss */
 .filetype {
   display: flex;
@@ -70,10 +101,16 @@ table > tr > th {
   row-gap: 20px;
 }
 select {
-  width: 25%;
-  padding: 10px;
+  width: 100%;
   border-radius: 10px;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #1c5a40;
+  border-radius: 10px;
+  outline: none;
+  padding: 0px 10px;
 }
+
 .formop {
   width: 300px;
   height: 50px;
@@ -90,16 +127,20 @@ select {
 }
 .form label {
   position: absolute;
-  top: 15px;
+  top: 8px;
   left: 15px;
-  color: rgb(22, 22, 22);
+  color: #1c5a40;
+  font-family: "Be Vietnam Pro", sans-serif;
   text-transform: capitalize;
   font-size: 18px;
   transition: top 0.3s;
+  line-height: 36px;
+  font-weight: 500;
   padding: 0 5px;
 }
+.form input:valid ~ label,
 .form input:focus ~ label {
-  top: -12px;
+  top: -18px;
   background-color: #fff;
 }
 .submitbuttonform {
@@ -110,6 +151,9 @@ select {
   .maininput {
     flex-direction: column;
     row-gap: 30px;
+  }
+  .card-info {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 325px) {

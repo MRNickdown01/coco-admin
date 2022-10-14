@@ -27,16 +27,20 @@
 }
 .formop1 label {
   position: absolute;
-  top: 15px;
+  top: 8px;
   left: 15px;
-  color: rgb(22, 22, 22);
+  color: #1c5a40;
+  font-family: "Be Vietnam Pro", sans-serif;
   text-transform: capitalize;
   font-size: 18px;
   transition: top 0.3s;
+  line-height: 36px;
+  font-weight: 500;
   padding: 0 5px;
 }
+.formop1 input:valid ~ label,
 .formop1 input:focus ~ label {
-  top: -12px;
+  top: -18px;
   background-color: #fff;
 }
 .form2 {
@@ -56,8 +60,23 @@
 }
 .table > thead > tr > th {
   color: #1c5a40;
-  font-family: "Poppins", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
+}
+.table > tbody > tr > td {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+/* dashboard */
+.badge-success {
+  padding: 12px;
+}
+.dashboardt {
+  font-family: " Be Vietnam Pro ", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 24px;
+  color: #1c5a40;
 }
 @media screen and (max-width: 468px) {
   .transactionfill {

@@ -10,7 +10,7 @@ function Test() {
           </h3>
           <div className="form">
             <div className="filetype">
-              <input type="file"></input>
+              <input type="file" class="custom-file-input" />
             </div>
             <form>
               <div className="maininput mt-5">
