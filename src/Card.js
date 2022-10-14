@@ -25,7 +25,7 @@ const Card = () => {
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5>Brand</h5>
+                    <h5 className="card-title">Brand</h5>
                     <div className="card-info">
                       <div className="card-button">
                         <Button
@@ -58,7 +58,7 @@ const Card = () => {
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5>Transaction</h5>
+                    <h5 className="card-title">Transaction</h5>
                     <div className="card-info">
                       <Button
                         backgroundColor="#0A3724"
@@ -81,7 +81,7 @@ const Card = () => {
               </div>
             </div>
           </div>
-        </div>{" "}
+        </div>
       </section>
     </>
   );

@@ -19,8 +19,11 @@ section {
 }
 .card-body {
   display: flex;
-  text-align: center;
+  text-align: initial;
   flex-direction: column;
+}
+.card-title {
+  text-align: center;
 }
 .bannerimage > img {
   width: 100%;
@@ -39,16 +42,12 @@ section {
 }
 .maininput {
   display: flex;
-  justify-content: inherit;
   column-gap: 30px;
 }
-.all-detail,
-.all-detail2 {
+.submitbuttonform {
   display: flex;
-  flex-direction: column;
-  row-gap: 30px;
+  justify-content: start;
 }
-
 .table1,
 .table2 {
   display: contents;
@@ -56,7 +55,6 @@ section {
 }
 .transaction-card {
   display: flex;
-  justify-content: center;
 }
 .transactionCardColor {
   background-color: #cee5db;
@@ -102,6 +100,13 @@ select {
 }
 .submitbuttonform {
   display: inline-flex;
+}
+
+@media screen and (max-width: 468px) {
+  .maininput {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }
 @media screen and (max-width: 325px) {
   .card-info {

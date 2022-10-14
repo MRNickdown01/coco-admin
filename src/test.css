@@ -1,6 +1,6 @@
 .transactionfill {
   display: flex;
-  justify-content: center;
+  column-gap: 30px;
 }
 .addbutton {
   display: flex;
@@ -50,4 +50,13 @@
 }
 .submitbuttonform {
   display: inline-flex;
+}
+@media screen and (max-width: 468px) {
+  .transactionfill {
+    flex-direction: column;
+  }
+  .any {
+    margin-top: 20px;
+    display: inline-flex;
+  }
 }
