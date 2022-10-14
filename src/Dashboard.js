@@ -42,7 +42,7 @@ function Dashboard() {
                   </div>
                 </td>
                 <td>
-                  <p class="fw-normal mb-1"> 1025</p>
+                  <p class="fw-normal mb-1 yourtrees"> 1025</p>
                 </td>
                 <td>
                   <span class="badge badge-success rounded-pill d-inline">
@@ -70,7 +70,7 @@ function Dashboard() {
                   </div>
                 </td>
                 <td>
-                  <p class="fw-normal mb-1"> 1025</p>
+                  <p class="fw-normal mb-1 yourtrees"> 1025</p>
                 </td>
                 <td>
                   <span class="badge badge-success rounded-pill d-inline">
@@ -98,7 +98,7 @@ function Dashboard() {
                   </div>
                 </td>
                 <td>
-                  <p class="fw-normal mb-1"> 1025</p>
+                  <p class="fw-normal mb-1 yourtrees"> 1025</p>
                 </td>
                 <td>
                   <span class="badge badge-success rounded-pill d-inline">
@@ -107,6 +107,7 @@ function Dashboard() {
                 </td>
               </tr>
             </tbody>
+            <Button className="d-flex">View All</Button>
           </table>
         </div>
       </div>

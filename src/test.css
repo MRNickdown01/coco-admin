@@ -70,8 +70,20 @@
 .badge-success {
   padding: 12px;
 }
+.yourtrees {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #545e7a;
+}
 .dashboardt {
-  font-family: " Be Vietnam Pro ", "sans-serif";
+  font-family: "Be Vietnam Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
