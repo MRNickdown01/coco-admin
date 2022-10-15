@@ -1,19 +1,71 @@
-
-
-<div className="form2 mt-5">
-  <div className="inputfatch">
-    <div className="formop1">
-      <input type="text" required />
-      <label for="">search</label>
-    </div>
-    <div className="formop1">
-      <input type="text" required />
-      <label for="">search</label>
-    </div>
-  </div>
-</div>
-<div className="submitbuttonform mt-3">
-  <Button backgroundColor="#0A3724" color="#fff" borderRadius="10px">
-    Save
-  </Button>
-</div>
+<table class="table align-middle mb-0 bg-white">
+  <tbody>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img src={leaves} alt="" // style="width: 45px; height: 45px"
+          class="rounded-circle" />
+          <div class="ms-3">
+            <p class="fw-bold mb-1 dashboardt">Planted a tree</p>
+            <p class="text-muted mb-0">26 July, 6:23 PM</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1 yourtrees">1025</p>
+      </td>
+      <td>
+        <span class="badge badge-success rounded-pill d-inline"> Code </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="table align-middle mb-0 bg-white">
+  <tbody>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img src={leaves} alt="" // style="width: 45px; height: 45px"
+          class="rounded-circle" />
+          <div class="ms-3">
+            <p class="fw-bold mb-1 dashboardt">Planted a tree</p>
+            <p class="text-muted mb-0">26 July, 6:23 PM</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1 yourtrees">1025</p>
+      </td>
+      <td>
+        <span class="badge badge-success rounded-pill d-inline">
+          Code Generated
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="table align-middle mb-0 bg-white">
+  <tbody>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img src={leaves} alt="" // style="width: 45px; height: 45px"
+          class="rounded-circle" />
+          <div class="ms-3">
+            <p class="fw-bold mb-1 dashboardt">Planted a tree</p>
+            <p class="text-muted mb-0">26 July, 6:23 PM</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1 yourtrees">1025</p>
+      </td>
+      <td>
+        <span class="badge badge-success rounded-pill d-inline">
+          Code Generated
+        </span>
+      </td>
+    </tr>
+  </tbody>
+  <Button className="d-flex">View All</Button>
+</table>

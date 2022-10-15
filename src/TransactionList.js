@@ -7,30 +7,50 @@ function TransactionList() {
         <h3 className="title d-flex justify-content-start mt-5 mb-5">
           List of Transaction
         </h3>
-        <div className="transactionlist-info">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Date</th>
-                <th scope="col">Last Updated</th>
-                <th scope="col">Status</th>
-                <th scope="col">Name</th>
-                <th scope="col">Coupon code</th>
-                <th scope="col">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">10/14/2002</th>
-                <td>10/14/2022</td>
-                <td>Code generated</td>
-                <td>Romil Meghani</td>
-                <td>BOGO</td>
-                <td>250/-</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      </div>
+      <div className="table-responsive" id="no-more-tables">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Last Updated</th>
+              <th scope="col">Status</th>
+              <th scope="col">Name</th>
+              <th scope="col">Coupon code</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-title="Date">22/08/2022</td>
+              <td data-title="Last Updated">25/08/2022</td>
+              <td data-title="Status">Code generated</td>
+              <td data-title="Name">Romil Meghani</td>
+              <td data-title="Coupon Code">BOGO</td>
+              <td data-title="Amount">250/-</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td data-title="Date">22/08/2022</td>
+              <td data-title="Last Updated">25/08/2022</td>
+              <td data-title="Status">Code generated</td>
+              <td data-title="Name">Romil Meghani</td>
+              <td data-title="Coupon Code">BOGO</td>
+              <td data-title="Amount">250/-</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td data-title="Date">22/08/2022</td>
+              <td data-title="Last Updated">25/08/2022</td>
+              <td data-title="Status">Code generated</td>
+              <td data-title="Name">Romil Meghani</td>
+              <td data-title="Coupon Code">BOGO</td>
+              <td data-title="Amount">250/-</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

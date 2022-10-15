@@ -55,23 +55,26 @@
 .submitbuttonform {
   display: inline-flex;
 }
+/* dashboard */
 .rounded-circle {
-  width: 80px;
+  width: 65px;
 }
 .table > thead > tr > th {
   color: #1c5a40;
-  font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
 }
 .table > tbody > tr > td {
   font-family: "Be Vietnam Pro", sans-serif;
 }
-/* dashboard */
+
 .badge-success {
-  padding: 12px;
+  padding: 15px;
+  font-size: 1rem;
+  background: #779d26;
+  color: #fff;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 .yourtrees {
-  font-family: "Be Vietnam Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -83,13 +86,68 @@
   color: #545e7a;
 }
 .dashboardt {
-  font-family: "Be Vietnam Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 24px;
   color: #1c5a40;
 }
+.view-button {
+  color: #fff;
+  background-color: #1c5a40;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.coupons-card {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#coupons-card {
+  width: 18rem;
+  background: #5abcd2;
+}
+.dashboard-card-btn {
+  margin-top: 1rem;
+  background: #d9d9d9;
+  border: 1px solid #d7cece;
+  border-radius: 7px;
+}
+/* transaction list */
+@media screen and (max-width: 768px) {
+  #no-more-tables tbody,
+  #no-more-tables tr,
+  #no-more-tables td {
+    display: block;
+  }
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #no-more-tables td {
+    position: relative;
+    padding-left: 50%;
+    border: none;
+    border-bottom: 1px solid#eee;
+  }
+  #no-more-tables td::before {
+    content: attr(data-title);
+    position: absolute;
+    left: 6px;
+    font-weight: bold;
+  }
+  #no-more-tables tr {
+    border-bottom: 2px solid rgb(104, 104, 104);
+  }
+  .coupons-card {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 468px) {
   .transactionfill {
     flex-direction: column;
