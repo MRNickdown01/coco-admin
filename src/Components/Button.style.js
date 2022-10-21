@@ -1,22 +1,48 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  display: inline-block;
-  font-size: 15px;
-  padding: 0.6em 3.5em;
-  margin: 0 0.1em 0.1em 0;
-  border: 0.16em solid rgba(255, 255, 255, 0);
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 700;
-  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-  text-align: center;
-  transition: all 0.2s;
 
-  :hover {
-    border-color: rgba(255, 255, 255, 1);
-  }
+    padding: 1em 3.1em 1.1em;
+    border:none;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+    background-color: #fbdedb;
+    display: inline-block;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: .85em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+// :hover,:focus {
+//     opacity: 0.8;
+// }
+:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
+block {
+    display: block !important;
+}
+circular {
+  border-radius: 50em !important;
+}
+
+
+/* Colours */
+
   background-color: ${(props) => props.backgroundColor};
   border-radius: ${(props) => props.borderRadius};
   border: ${(props) => props.border};

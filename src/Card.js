@@ -24,7 +24,6 @@ const Card = () => {
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 className="card-title">Brand</h5>
                     <div className="card-info">
                       <div className="card-button">
                         <a href="/test">
@@ -42,7 +41,7 @@ const Card = () => {
                         <a href="viewlist">
                           <Button
                             backgroundColor="#92B9A8"
-                            borderRadius="4px"
+                            borderRadius="10px"
                             border="2px dashed #0A3724"
                           >
                             View List
@@ -61,7 +60,6 @@ const Card = () => {
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <h5 className="card-title">Transaction</h5>
                     <div className="card-info">
                       <a href="/transaction">
                         <Button
@@ -75,7 +73,38 @@ const Card = () => {
                       <a href="/transactionlist">
                         <Button
                           backgroundColor="#92B9A8"
-                          borderRadius="4px"
+                          borderRadius="10px"
+                          border="2px dashed #0A3724"
+                        >
+                          View List
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-5 col-lg-5">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://images.squarespace-cdn.com/content/v1/57ec45673e00be08c53b9142/1481488248167-IGINL272OSZD4S8HKH9H/btb-brands-wall_share.jpg?format=2500w"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <div className="card-info">
+                      <a href="/transaction">
+                        <Button
+                          backgroundColor="#0A3724"
+                          borderRadius="10px"
+                          color="#fff"
+                        >
+                          Add New
+                        </Button>
+                      </a>
+                      <a href="/transactionlist">
+                        <Button
+                          backgroundColor="#92B9A8"
+                          borderRadius="10px"
                           border="2px dashed #0A3724"
                         >
                           View List
