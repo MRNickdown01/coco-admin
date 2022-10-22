@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Card.css";
-import { Button, Input } from "./Components/Button.style";
+import { Button } from "./Components/Button.style";
 const Card = () => {
   const [show, setShow] = useState(false);
 
@@ -92,16 +92,7 @@ const Card = () => {
                   />
                   <div class="card-body">
                     <div className="card-info">
-                      <a href="/transaction">
-                        <Button
-                          backgroundColor="#0A3724"
-                          borderRadius="10px"
-                          color="#fff"
-                        >
-                          Add New
-                        </Button>
-                      </a>
-                      <a href="/transactionlist">
+                      <a href="/customerlist">
                         <Button
                           backgroundColor="#92B9A8"
                           borderRadius="10px"

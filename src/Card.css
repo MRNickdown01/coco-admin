@@ -33,6 +33,7 @@ section {
   display: flex;
   text-align: initial;
   flex-direction: column;
+  padding: 5px;
 }
 .card-title {
   text-align: center;
