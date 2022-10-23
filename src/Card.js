@@ -41,7 +41,7 @@ const Card = () => {
                         <a href="viewlist">
                           <Button
                             backgroundColor="#92B9A8"
-                            borderRadius="10px"
+                            borderRadius="8px"
                             border="2px dashed #0A3724"
                           >
                             View List
@@ -73,7 +73,7 @@ const Card = () => {
                       <a href="/transactionlist">
                         <Button
                           backgroundColor="#92B9A8"
-                          borderRadius="10px"
+                          borderRadius="8px"
                           border="2px dashed #0A3724"
                         >
                           View List
@@ -95,7 +95,7 @@ const Card = () => {
                       <a href="/customerlist">
                         <Button
                           backgroundColor="#92B9A8"
-                          borderRadius="10px"
+                          borderRadius="8px"
                           border="2px dashed #0A3724"
                         >
                           View List
@@ -110,9 +110,23 @@ const Card = () => {
           <a href="/dashboard">
             <Button
               type="button"
+              backgroundColor="#92B9A8"
+              borderRadius="8px"
+              border="2px dashed #0A3724"
               className="d-flex-justify-content-center mt-5"
             >
               Dashboard
+            </Button>
+          </a>
+          <a href="/emaillink">
+            <Button
+              type="button"
+              backgroundColor="#92B9A8"
+              borderRadius="8px"
+              border="2px dashed #0A3724"
+              className="d-flex-justify-content-center mt-5"
+            >
+              emaillink
             </Button>
           </a>
         </div>

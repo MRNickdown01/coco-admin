@@ -33,9 +33,6 @@ function AddList() {
                     }}
                     class="rounded-circle"
                   />
-                  <div class="ms-3">
-                    <h6>1</h6>
-                  </div>
                 </div>
               </td>
               <td data-title="Brand Name">
@@ -66,9 +63,6 @@ function AddList() {
                       height: "45px",
                     }}
                   />
-                  <div class="ms-3">
-                    <h6>1</h6>
-                  </div>
                 </div>
               </td>
               <td data-title="Brand Name">
@@ -99,9 +93,6 @@ function AddList() {
                       height: "45px",
                     }}
                   />
-                  <div class="ms-3">
-                    <h6>1</h6>
-                  </div>
                 </div>
               </td>
               <td data-title="Brand Name">

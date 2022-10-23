@@ -8,6 +8,8 @@ import AddList from "./AddList";
 import Transaction from "./Transaction";
 import Dashboard from "./Dashboard";
 import CustomerList from "./CustomerList";
+import EmailLink from "./Components/AdminLogin/EmailLink";
+import CompleteProfile from "./Components/AdminLogin/CompleteProfile";
 import "./App.css";
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
           <Route path="/transactionlist" element={<TransactionList />} />
           <Route path="/customerlist" element={<CustomerList />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/emaillink" element={<EmailLink />} />
+          <Route path="/completeprofile" element={<CompleteProfile />} />
         </Routes>
       </BrowserRouter>
     </div>

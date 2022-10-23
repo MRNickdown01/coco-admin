@@ -2,26 +2,18 @@ import styled from "styled-components";
 
 export const Button = styled.button`
 
-    padding: 1em 3.1em 1.1em;
-    border:none;
-    border-radius: 3px;
-    margin: 8px 8px 8px 8px;
-    background-color: #fbdedb;
-    display: inline-block;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    font-family: sans-serif;
-    font-weight: 800;
-    font-size: .85em;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    position: relative;
+ display:inline-block;
+ padding:0.80em 5.2em;
+ border:0.1em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.12em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.2s;
 }
 // :hover,:focus {
 //     opacity: 0.8;
