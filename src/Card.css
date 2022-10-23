@@ -159,6 +159,34 @@ select {
   text-align: center;
   font-weight: bold;
 }
+.card-info-1 {
+  margin: 10px;
+}
+.user-list {
+  display: block;
+  width: 100%;
+  padding: 0.8em 0em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #252525;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #92b9a8;
+  border-radius: 8px;
+  border: 2px dashed #0a3724;
+}
+.user-list:active {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
 @media screen and (max-width: 468px) {
   .maininput {
     flex-direction: column;

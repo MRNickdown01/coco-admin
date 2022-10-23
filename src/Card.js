@@ -43,6 +43,7 @@ const Card = () => {
                             backgroundColor="#92B9A8"
                             borderRadius="8px"
                             border="2px dashed #0A3724"
+                            color="#252525"
                           >
                             View List
                           </Button>
@@ -75,6 +76,7 @@ const Card = () => {
                           backgroundColor="#92B9A8"
                           borderRadius="8px"
                           border="2px dashed #0A3724"
+                          color="#252525"
                         >
                           View List
                         </Button>
@@ -91,15 +93,9 @@ const Card = () => {
                     alt="Card image cap"
                   />
                   <div class="card-body">
-                    <div className="card-info">
+                    <div className="card-info-1">
                       <a href="/customerlist">
-                        <Button
-                          backgroundColor="#92B9A8"
-                          borderRadius="8px"
-                          border="2px dashed #0A3724"
-                        >
-                          View List
-                        </Button>
+                        <button className="user-list">View List</button>
                       </a>
                     </div>
                   </div>

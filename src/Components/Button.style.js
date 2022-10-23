@@ -2,22 +2,21 @@ import styled from "styled-components";
 
 export const Button = styled.button`
 
- display:inline-block;
- padding:0.80em 5.2em;
- border:0.1em solid #FFFFFF;
- margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
- color:#FFFFFF;
- text-align:center;
- transition: all 0.2s;
+display:inline-block;
+padding:0.80em 5.2em;
+border:0.1em solid #FFFFFF;
+margin:0 0.3em 0.3em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+text-align:center;
+transition: all 0.2s;
+font-weight:700;
 }
-// :hover,:focus {
-//     opacity: 0.8;
-// }
+
 :active {
     -webkit-transform: scale(0.80);
     -moz-transform: scale(0.80);
