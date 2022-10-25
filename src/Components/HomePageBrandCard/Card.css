@@ -45,6 +45,8 @@ h5 {
 }
 .card-info {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 .custom-file-input::-webkit-file-upload-button {

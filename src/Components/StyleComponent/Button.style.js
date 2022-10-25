@@ -1,35 +1,31 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-
-display:inline-block;
-padding:0.80em 5.2em;
-border:0.1em solid #FFFFFF;
-margin:0 0.3em 0.3em 0;
-border-radius:0.12em;
-box-sizing: border-box;
-text-decoration:none;
-font-family:'Roboto',sans-serif;
-font-weight:300;
-color:#FFFFFF;
-text-align:center;
-transition: all 0.2s;
-font-weight:700;
+    box-sizing: border-box;
+    display: block;
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    margin: 0 0.3em 0.3em 0;
+    padding: 0.8em 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+    width:15rem;
 }
 
-:active {
-    -webkit-transform: scale(0.80);
-    -moz-transform: scale(0.80);
-    -ms-transform: scale(0.80);
-    -o-transform: scale(0.80);
-    transform: scale(0.80);
-}
-block {
-    display: block !important;
-}
-circular {
-  border-radius: 50em !important;
-}
+// :active {
+//     -webkit-transform: scale(0.80);
+//     -moz-transform: scale(0.80);
+//     -ms-transform: scale(0.80);
+//     -o-transform: scale(0.80);
+//     transform: scale(0.80);
+// }
+// block {
+//     display: block !important;
+// }
+// circular {
+//   border-radius: 50em !important;
+// }
 
 
 /* Colours */
