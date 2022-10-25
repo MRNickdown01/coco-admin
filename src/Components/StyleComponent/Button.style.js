@@ -11,6 +11,7 @@ export const Button = styled.button`
     text-decoration: none;
     transition: all .2s;
     width:15rem;
+    border:#0A3724;
 }
 
 // :active {
