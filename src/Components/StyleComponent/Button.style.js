@@ -11,22 +11,22 @@ export const Button = styled.button`
     text-decoration: none;
     transition: all .2s;
     width:15rem;
-    border:#0A3724;
+    border:2px solid #0A3724;
 }
 
-// :active {
-//     -webkit-transform: scale(0.80);
-//     -moz-transform: scale(0.80);
-//     -ms-transform: scale(0.80);
-//     -o-transform: scale(0.80);
-//     transform: scale(0.80);
-// }
-// block {
-//     display: block !important;
-// }
-// circular {
-//   border-radius: 50em !important;
-// }
+:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
+block {
+    display: block !important;
+}
+circular {
+  border-radius: 50em !important;
+}
 
 
 /* Colours */
