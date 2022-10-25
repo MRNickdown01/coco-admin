@@ -38,7 +38,7 @@ const Card = () => {
                         </a>
                       </div>
                       <div className="card-button2">
-                        <a href="viewlist">
+                        <a href="brandviewlist">
                           <Button
                             backgroundColor="#92B9A8"
                             borderRadius="8px"

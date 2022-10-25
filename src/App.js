@@ -2,7 +2,7 @@ import Card from "./Components/HomePageBrandCard/Card";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AddBrand from "./Components/AddBrands/AddBrand";
 import TransactionList from "./Components/TransactionViewList/TransactionList";
-import AddList from "./Components/BrandViewList/AddList";
+import BrandViewList from "./Components/BrandViewLists/BrandViewList";
 import Transaction from "./Components/AddTransactions/Transaction";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import CustomerList from "./Components/CustomerViewList/CustomerList";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Card />} />
           <Route path="/addbrand" element={<AddBrand />} />
           <Route path="/transaction" element={<Transaction />} />
-          <Route path="/viewlist" element={<AddList />} />
+          <Route path="/brandviewlist" element={<BrandViewList />} />
           <Route path="/transactionlist" element={<TransactionList />} />
           <Route path="/customerlist" element={<CustomerList />} />
           <Route path="/dashboard" element={<Dashboard />} />

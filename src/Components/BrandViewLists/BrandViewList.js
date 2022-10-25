@@ -1,6 +1,6 @@
 import React from "react";
 
-function AddList() {
+function BrandViewList() {
   return (
     <div className="List of Brands">
       <div className="container-fluid">
@@ -118,4 +118,4 @@ function AddList() {
   );
 }
 
-export default AddList;
+export default BrandViewList;
