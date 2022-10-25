@@ -1,5 +1,5 @@
-import { Button } from "./Components/Button.style";
-import "./test.css";
+import { Button } from "../StyleComponent/Button.style";
+import "../AddBrands/Style.css";
 function Test() {
   return (
     <>

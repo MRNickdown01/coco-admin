@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Dropdown } from "react-bootstrap";
 function TransactionList() {
   return (
     <div className="List of Transaction">
@@ -14,7 +14,33 @@ function TransactionList() {
             <tr>
               <th scope="col">Date</th>
               <th scope="col">Last Updated</th>
-              <th scope="col">Status</th>
+              <th scope="col">
+                <Dropdown>
+                  <Dropdown.Toggle
+                    id="dropdown-basic"
+                    style={{
+                      background: "transparent",
+                      boxShadow: "none",
+                      color: "#1c5a40",
+                      textTransform: "capitalize",
+                      fontWeight: "500",
+                      fontSize: "16px",
+                    }}
+                  >
+                    Status
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
+                      Another action
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </th>
               <th scope="col">Name</th>
               <th scope="col">Coupon code</th>
               <th scope="col">Amount</th>

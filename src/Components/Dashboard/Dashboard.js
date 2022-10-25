@@ -1,16 +1,15 @@
 import React from "react";
 
-import leaves from "./leaves.png";
+import leaves from "./assets/leaves.png";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import IconButton from "@mui/material/IconButton";
 import { Button, CardActions } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import brand1 from "./brand1.png";
-import brand2 from "./brand2.png";
+import brand1 from "./assets/brand1.png";
+import brand2 from "./assets/brand2.png";
 import { ContentCopy } from "@mui/icons-material";
 function Dashboard() {
   const theme = useTheme();

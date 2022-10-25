@@ -6,3 +6,9 @@
   flex-wrap: wrap;
   align-items: center;
 }
+@media screen and (max-width: 400px) {
+  .funny {
+    display: block;
+    flex-wrap: nowrap;
+  }
+}

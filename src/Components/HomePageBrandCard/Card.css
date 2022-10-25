@@ -10,8 +10,8 @@ h5 {
   font-weight: 800;
   line-height: 55px;
 }
-section {
-  /* background: #92b9a8; */
+.banner-bg {
+  background: #92b9a8;
   height: 100%;
 }
 .allcard {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Card.css";
-import { Button } from "./Components/Button.style";
+import { Button } from "../StyleComponent/Button.style";
 const Card = () => {
   const [show, setShow] = useState(false);
 
@@ -9,7 +9,7 @@ const Card = () => {
   };
   return (
     <>
-      <section>
+      <section className="banner-bg">
         <div className="bannerimage">
           <img src="https://cdn.pixabay.com/photo/2022/08/18/15/17/mountain-7395141_960_720.jpg"></img>
         </div>
@@ -26,7 +26,7 @@ const Card = () => {
                   <div class="card-body">
                     <div className="card-info">
                       <div className="card-button">
-                        <a href="/test">
+                        <a href="/addbrand">
                           <Button
                             onClick={handleClick}
                             backgroundColor="#0A3724"

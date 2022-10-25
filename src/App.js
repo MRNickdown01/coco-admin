@@ -1,13 +1,11 @@
-import logo from "./logo.svg";
-import Card from "./Card";
+import Card from "./Components/HomePageBrandCard/Card";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Button, Input } from "./Components/Button.style";
-import Test from "./Test";
-import TransactionList from "./TransactionList";
-import AddList from "./AddList";
-import Transaction from "./Transaction";
-import Dashboard from "./Dashboard";
-import CustomerList from "./CustomerList";
+import AddBrand from "./Components/AddBrands/AddBrand";
+import TransactionList from "./Components/TransactionViewList/TransactionList";
+import AddList from "./Components/BrandViewList/AddList";
+import Transaction from "./Components/AddTransactions/Transaction";
+import Dashboard from "./Components/Dashboard/Dashboard";
+import CustomerList from "./Components/CustomerViewList/CustomerList";
 import EmailLink from "./Components/AdminLogin/EmailLink";
 import CompleteProfile from "./Components/AdminLogin/CompleteProfile";
 import "./App.css";
@@ -21,7 +19,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Card />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/addbrand" element={<AddBrand />} />
           <Route path="/transaction" element={<Transaction />} />
           <Route path="/viewlist" element={<AddList />} />
           <Route path="/transactionlist" element={<TransactionList />} />
