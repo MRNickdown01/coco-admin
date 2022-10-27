@@ -1,6 +1,29 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 function BrandViewList() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    async function login() {
+      const response = await fetch(
+        "https://coco-backend1.herokuapp.com/getBrands",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "*/*",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
+      const result = await response.json();
+      setData(result);
+      console.log(result);
+    }
+    login();
+  }, []);
+
   return (
     <div className="List of Brands">
       <div className="container-fluid">
@@ -8,12 +31,12 @@ function BrandViewList() {
           List of Brands
         </h3>
       </div>
+
       <div className="table-responsive" id="no-more-tables">
-        <table className="table align-middle mb-0 bg-white">
-          <thead className="bg-light">
+        <table class="table align-middle mb-0 bg-white">
+          <thead class="bg-light">
             <tr>
               <th>Rank</th>
-              <th></th>
               <th>Brand Name</th>
               <th>Payout Policy</th>
               <th>Return Period</th>
@@ -22,152 +45,44 @@ function BrandViewList() {
               <th></th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td data-title="Rank ">
-                <div className="">
-                  <h4>1</h4>
-                </div>
-              </td>
-              <td date-title="">
-                <img
-                  src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                  alt=""
-                  style={{
-                    width: "45px",
-                    height: "45px",
-                  }}
-                  className="rounded-circle"
-                />
-              </td>
-              <td data-title="Brand Name">
-                <p className="fw-bold mb-1">Sublime Life</p>
-              </td>
-              <td data-title="Payout Policy">
-                <p classname="fw-normal mb-1">10 days</p>
-              </td>
-              <td data-title="Return Period">
-                <p classname="fw-normal mb-1">10 days</p>
-              </td>
-              <td data-title="% for customer">
-                <p classname="fw-normal mb-1">10 %</p>
-              </td>
-              <td data-title="% for social">
-                <p classname="fw-normal mb-1">10 %</p>
-              </td>
-              <td data-title="">
-                <button
-                  style={{
-                    padding: "5px 30px",
-                    borderRadius: "6px",
-                    background: "#1c5a40",
-                    border: "1px solid #1c5a40",
-                    color: "#fff",
-                  }}
-                  type="submit"
-                  id="edit-button"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td data-title="Rank ">
-                <div className="">
-                  <h4>2</h4>
-                </div>
-              </td>
-              <td date-title="">
-                <img
-                  src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?cs=srgb&dl=pexels-italo-melo-2379005.jpg&fm=jpg"
-                  alt=""
-                  style={{
-                    width: "45px",
-                    height: "45px",
-                  }}
-                  className="rounded-circle"
-                />
-              </td>
-              <td data-title="Brand Name">
-                <p className="fw-bold mb-1">Sublime Life</p>
-              </td>
-              <td data-title="Payout Policy">
-                <p className="fw-normal mb-1">10 days</p>
-              </td>
-              <td data-title="Return Period">
-                <p className="fw-normal mb-1">10 days</p>
-              </td>
-              <td data-title="% for customer">
-                <p className="fw-normal mb-1">10 %</p>
-              </td>
-              <td data-title="% for social">
-                <p className="fw-normal mb-1">10 %</p>
-              </td>
-              <td data-title="">
-                <button
-                  style={{
-                    padding: "5px 30px",
-                    borderRadius: "6px",
-                    background: "#1c5a40",
-                    border: "1px solid #1c5a40",
-                    color: "#fff",
-                  }}
-                  type="submit"
-                  id="edit-button"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td data-title="Rank ">
-                <div className="">
-                  <h4>3</h4>
-                </div>
-              </td>
-              <td date-title="">
-                <img
-                  src="https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg"
-                  alt=""
-                  style={{
-                    width: "45px",
-                    height: "45px",
-                  }}
-                  className="rounded-circle"
-                />
-              </td>
-              <td data-title="Brand Name">
-                <p className="fw-bold mb-1">Sublime Life</p>
-              </td>
-              <td data-title="Payout Policy">
-                <p className="fw-normal mb-1">10 days</p>
-              </td>
-              <td data-title="Return Period">
-                <p className="fw-normal mb-1">10 days</p>
-              </td>
-              <td data-title="% for customer">
-                <p className="fw-normal mb-1">10 %</p>
-              </td>
-              <td data-title="% for social">
-                <p className="fw-normal mb-1">10 %</p>
-              </td>
-              <td data-title="">
-                <button
-                  style={{
-                    padding: "5px 30px",
-                    borderRadius: "6px",
-                    background: "#1c5a40",
-                    border: "1px solid #1c5a40",
-                    color: "#fff",
-                  }}
-                  type="submit"
-                  id="edit-button"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-          </tbody>
+          {data.map((data) => {
+            return (
+              <>
+                <tbody>
+                  <tr key={data.brandId}>
+                    <td data-title="Rank">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img
+                          src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                          alt=""
+                          style={{
+                            width: "45px",
+                            height: "45px",
+                          }}
+                          class="rounded-circle"
+                        />
+                      </div>
+                    </td>
+                    <td data-title="Brand Name">
+                      <p class="fw-bold mb-1">{data.brandName}</p>
+                    </td>
+                    <td data-title="Payout Policy">
+                      <p class="fw-normal mb-1">{data.payoutPolicy}</p>
+                    </td>
+                    <td data-title="Return Period">
+                      <p class="fw-normal mb-1">{data.returnPolicy}</p>
+                    </td>
+                    <td data-title="% for customer">
+                      <p class="fw-normal mb-1">{data.customerPercentage}</p>
+                    </td>
+                    <td data-title="% for social">
+                      <p class="fw-normal mb-1">{data.socialPercentage}</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </>
+            );
+          })}
         </table>
       </div>
     </div>
