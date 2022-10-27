@@ -13,6 +13,7 @@ function BrandViewList() {
           <thead className="bg-light">
             <tr>
               <th>Rank</th>
+              <th></th>
               <th>Brand Name</th>
               <th>Payout Policy</th>
               <th>Return Period</th>
@@ -23,18 +24,21 @@ function BrandViewList() {
           </thead>
           <tbody>
             <tr>
-              <td data-title="Rank">
-                <div className="d-flex align-items-center justify-content-center">
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                    alt=""
-                    style={{
-                      width: "45px",
-                      height: "45px",
-                    }}
-                    className="rounded-circle"
-                  />
+              <td data-title="Rank ">
+                <div className="">
+                  <h4>1</h4>
                 </div>
+              </td>
+              <td date-title="">
+                <img
+                  src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                  alt=""
+                  style={{
+                    width: "45px",
+                    height: "45px",
+                  }}
+                  className="rounded-circle"
+                />
               </td>
               <td data-title="Brand Name">
                 <p className="fw-bold mb-1">Sublime Life</p>
@@ -68,18 +72,21 @@ function BrandViewList() {
               </td>
             </tr>
             <tr>
-              <td data-title="Rank">
-                <div className="d-flex align-items-center justify-content-center">
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-                    class="rounded-circle"
-                    alt=""
-                    style={{
-                      width: "45px",
-                      height: "45px",
-                    }}
-                  />
+              <td data-title="Rank ">
+                <div className="">
+                  <h4>2</h4>
                 </div>
+              </td>
+              <td date-title="">
+                <img
+                  src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?cs=srgb&dl=pexels-italo-melo-2379005.jpg&fm=jpg"
+                  alt=""
+                  style={{
+                    width: "45px",
+                    height: "45px",
+                  }}
+                  className="rounded-circle"
+                />
               </td>
               <td data-title="Brand Name">
                 <p className="fw-bold mb-1">Sublime Life</p>
@@ -113,18 +120,21 @@ function BrandViewList() {
               </td>
             </tr>
             <tr>
-              <td data-title="Rank">
-                <div className="d-flex align-items-center justify-content-center">
-                  <img
-                    src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-                    className="rounded-circle"
-                    alt=""
-                    style={{
-                      width: "45px",
-                      height: "45px",
-                    }}
-                  />
+              <td data-title="Rank ">
+                <div className="">
+                  <h4>3</h4>
                 </div>
+              </td>
+              <td date-title="">
+                <img
+                  src="https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg"
+                  alt=""
+                  style={{
+                    width: "45px",
+                    height: "45px",
+                  }}
+                  className="rounded-circle"
+                />
               </td>
               <td data-title="Brand Name">
                 <p className="fw-bold mb-1">Sublime Life</p>
