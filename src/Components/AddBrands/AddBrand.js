@@ -42,29 +42,33 @@ function Test() {
 
   async function login(e) {
     e.preventDefault();
-    let item = {
-      brandName: brand.brandName.value.trim(),
-      rank: brand.rank.value.trim(),
-      returnPolicy: brand.returnPolicy.value.trim(),
-      payoutPolicy: brand.payoutPolicy.value.trim(),
-      socialPercentage: brand.socialPercentage.value.trim(),
-      customerPercentage: brand.customerPercentage.value.trim(),
-      brandImage: brand.imagePath.value.trim(),
-    };
-    console.log(item);
-    const response = await fetch("http://localhost:5000/addBrand", {
+    let fileInput = document.getElementById("imagefile");
+    var formdata = new FormData();
+    formdata.append("brandName", brand.brandName.value.trim());
+    formdata.append("rank", brand.rank.value.trim());
+    formdata.append("returnPolicy", brand.returnPolicy.value.trim());
+    formdata.append("payoutPolicy", brand.payoutPolicy.value.trim());
+    formdata.append("socialPercentage", brand.socialPercentage.value.trim());
+    formdata.append(
+      "customerPercentage",
+      brand.customerPercentage.value.trim()
+    );
+    formdata.append(
+      "brandImage",
+      fileInput.files[0],
+      brand.imagePath.value.trim()
+    );
+
+    var requestOptions = {
       method: "POST",
-      headers: {
-        "Content-Type":
-          "multipart/form-data; boundary=<calculated when request is sent>",
-        Accept: "*/*",
-        "Access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify(item),
-    });
-    const data = await response.json();
-    console.log(data);
-    alert(data.message);
+      body: formdata,
+      redirect: "follow",
+    };
+
+    fetch("http://coco-backend1.herokuapp.com/addBrand", requestOptions)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
   }
   return (
     <>
@@ -81,6 +85,7 @@ function Test() {
                     let value = e.target.value;
                     onInputChange("imagePath", value);
                   }}
+                  id="imagefile"
                   type="file"
                   class="custom-file-input"
                 />
