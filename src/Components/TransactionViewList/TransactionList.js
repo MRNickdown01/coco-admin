@@ -9,7 +9,7 @@ function TransactionList() {
         </h3>
       </div>
       <div className="table-responsive" id="no-more-tables">
-        <table class="table">
+        <table className="table">
           <thead>
             <tr>
               <th scope="col">Date</th>

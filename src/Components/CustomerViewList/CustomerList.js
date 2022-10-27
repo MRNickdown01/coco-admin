@@ -44,8 +44,8 @@ const customerList = () => {
         </h3>
       </div>
       <div className="table-responsive" id="no-more-tables">
-        <table class="table align-middle mb-0 bg-white">
-          <thead class="bg-light">
+        <table className="table align-middle mb-0 bg-white">
+          <thead className="bg-light">
             <tr>
               <th>Serial</th>
               <th>Customer’s Name</th>
@@ -56,15 +56,15 @@ const customerList = () => {
           <tbody>
             <tr>
               <td data-title="Serial">
-                <div class="ms-3">
+                <div className="ms-3">
                   <h6>1</h6>
                 </div>
               </td>
               <td data-title="Customer’s Name">
-                <p class="fw-bold mb-1">Romil Meghani</p>
+                <p className="fw-bold mb-1">Romil Meghani</p>
               </td>
               <td data-title="Email Address">
-                <p class="fw-bold mb-1">romilmeghani@gmail.com</p>
+                <p className="fw-bold mb-1">romilmeghani@gmail.com</p>
               </td>
               <td data-title="status">
                 <FormControlLabel
@@ -75,15 +75,15 @@ const customerList = () => {
             </tr>
             <tr>
               <td data-title="Serial">
-                <div class="ms-3">
+                <div className="ms-3">
                   <h6>2</h6>
                 </div>
               </td>
               <td data-title="Customer’s Name">
-                <p class="fw-bold mb-1">Romil Meghani</p>
+                <p className="fw-bold mb-1">Romil Meghani</p>
               </td>
               <td data-title="Email Address">
-                <p class="fw-bold mb-1">romilmeghani@gmail.com</p>
+                <p className="fw-bold mb-1">romilmeghani@gmail.com</p>
               </td>
               <td data-title="status">
                 <FormControlLabel
@@ -94,15 +94,15 @@ const customerList = () => {
             </tr>
             <tr>
               <td data-title="Serial">
-                <div class="ms-3">
+                <div className="ms-3">
                   <h6>3</h6>
                 </div>
               </td>
               <td data-title=" Name">
-                <p class="fw-bold mb-1">Romil Meghani</p>
+                <p className="fw-bold mb-1">Romil Meghani</p>
               </td>
               <td data-title="Customer’s Name">
-                <p class="fw-bold mb-1">romilmeghani@gmail.com</p>
+                <p className="fw-bold mb-1">romilmeghani@gmail.com</p>
               </td>
               <td data-title="status">
                 <FormControlLabel

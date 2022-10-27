@@ -4,7 +4,7 @@ import AddBrand from "./Components/AddBrands/AddBrand";
 import TransactionList from "./Components/TransactionViewList/TransactionList";
 import BrandViewList from "./Components/BrandViewLists/BrandViewList";
 import Transaction from "./Components/AddTransactions/Transaction";
-import Dashboard from "./Components/Dashboard/Dashboard";
+// import Dashboard from "./Components/Dashboard/Dashboard";
 import CustomerList from "./Components/CustomerViewList/CustomerList";
 import EmailLink from "./Components/AdminLogin/EmailLink";
 import CompleteProfile from "./Components/AdminLogin/CompleteProfile";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/brandviewlist" element={<BrandViewList />} />
           <Route path="/transactionlist" element={<TransactionList />} />
           <Route path="/customerlist" element={<CustomerList />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           <Route path="/emaillink" element={<EmailLink />} />
           <Route path="/completeprofile" element={<CompleteProfile />} />
         </Routes>

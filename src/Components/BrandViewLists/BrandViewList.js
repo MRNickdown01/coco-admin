@@ -30,12 +30,11 @@ function BrandViewList() {
         <h3 className="title d-flex justify-content-start mt-5 mb-5">
           List of Brands
         </h3>
-        {/* <button onClick={login}>up</button> */}
       </div>
 
       <div className="table-responsive" id="no-more-tables">
-        <table className="table align-middle mb-0 bg-white">
-          <thead className="bg-light">
+        <table class="table align-middle mb-0 bg-white">
+          <thead class="bg-light">
             <tr>
               <th>Rank</th>
               <th>Brand Name</th>
@@ -43,6 +42,7 @@ function BrandViewList() {
               <th>Return Period</th>
               <th>% for customer</th>
               <th>% for social</th>
+              <th></th>
             </tr>
           </thead>
           {data.map((data) => {
