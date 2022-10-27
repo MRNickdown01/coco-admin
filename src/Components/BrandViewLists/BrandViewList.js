@@ -46,62 +46,64 @@ function BrandViewList() {
               <th></th>
             </tr>
           </thead>
-          {data.map((data) => {
-            return (
-              <>
-                <tbody>
-                  <tr key={data.brandId}>
-                    <td data-title="Rank">
-                      <div className="d-flex align-items-center justify-content-center">
-                        <h4>1</h4>
-                      </div>
-                    </td>
-                    <td data-title="Brand">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <img
-                          src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                          alt=""
+          {data
+            .map((data) => {
+              return (
+                <>
+                  <tbody>
+                    <tr key={data.brandId}>
+                      <td data-title="Rank">
+                        <div className="d-flex align-items-center justify-content-center">
+                          <h4>{data.rank}</h4>
+                        </div>
+                      </td>
+                      <td data-title="Brand">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <img
+                            src={data.imagePath}
+                            alt=""
+                            style={{
+                              width: "45px",
+                              height: "45px",
+                            }}
+                            class="rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td data-title="Brand Name">
+                        <p class="fw-bold mb-1">{data.brandName}</p>
+                      </td>
+                      <td data-title="Payout Policy">
+                        <p class="fw-normal mb-1">{data.payoutPolicy}</p>
+                      </td>
+                      <td data-title="Return Period">
+                        <p class="fw-normal mb-1">{data.returnPolicy}</p>
+                      </td>
+                      <td data-title="% for customer">
+                        <p class="fw-normal mb-1">{data.customerPercentage}</p>
+                      </td>
+                      <td data-title="% for social">
+                        <p class="fw-normal mb-1">{data.socialPercentage}</p>
+                      </td>
+                      <td data-title="% for social">
+                        <button
                           style={{
-                            width: "45px",
-                            height: "45px",
+                            padding: "5px 2rem",
+                            borderRadius: "4px",
+                            color: "#fff",
+                            backgroundColor: "#1c5a40",
+                            border: "2px solid#1c5a40",
                           }}
-                          class="rounded-circle"
-                        />
-                      </div>
-                    </td>
-                    <td data-title="Brand Name">
-                      <p class="fw-bold mb-1">{data.brandName}</p>
-                    </td>
-                    <td data-title="Payout Policy">
-                      <p class="fw-normal mb-1">{data.payoutPolicy}</p>
-                    </td>
-                    <td data-title="Return Period">
-                      <p class="fw-normal mb-1">{data.returnPolicy}</p>
-                    </td>
-                    <td data-title="% for customer">
-                      <p class="fw-normal mb-1">{data.customerPercentage}</p>
-                    </td>
-                    <td data-title="% for social">
-                      <p class="fw-normal mb-1">{data.socialPercentage}</p>
-                    </td>
-                    <td data-title="% for social">
-                      <button
-                        style={{
-                          padding: "5px 2rem",
-                          borderRadius: "4px",
-                          color: "#fff",
-                          backgroundColor: "#1c5a40",
-                          border: "2px solid#1c5a40",
-                        }}
-                      >
-                        Edit
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </>
-            );
-          })}
+                        >
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </>
+              );
+            })
+            .reverse()}
         </table>
       </div>
     </div>
