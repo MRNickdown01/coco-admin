@@ -37,6 +37,7 @@ function BrandViewList() {
           <thead class="bg-light">
             <tr>
               <th>Rank</th>
+              <th>Brand</th>
               <th>Brand Name</th>
               <th>Payout Policy</th>
               <th>Return Period</th>
@@ -51,6 +52,11 @@ function BrandViewList() {
                 <tbody>
                   <tr key={data.brandId}>
                     <td data-title="Rank">
+                      <div className="d-flex align-items-center justify-content-center">
+                        <h4>1</h4>
+                      </div>
+                    </td>
+                    <td data-title="Brand">
                       <div class="d-flex align-items-center justify-content-center">
                         <img
                           src="https://mdbootstrap.com/img/new/avatars/8.jpg"
@@ -77,6 +83,19 @@ function BrandViewList() {
                     </td>
                     <td data-title="% for social">
                       <p class="fw-normal mb-1">{data.socialPercentage}</p>
+                    </td>
+                    <td data-title="% for social">
+                      <button
+                        style={{
+                          padding: "5px 2rem",
+                          borderRadius: "4px",
+                          color: "#fff",
+                          backgroundColor: "#1c5a40",
+                          border: "2px solid#1c5a40",
+                        }}
+                      >
+                        Edit
+                      </button>
                     </td>
                   </tr>
                 </tbody>
