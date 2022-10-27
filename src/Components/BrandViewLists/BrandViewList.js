@@ -9,8 +9,8 @@ function BrandViewList() {
         </h3>
       </div>
       <div className="table-responsive" id="no-more-tables">
-        <table class="table align-middle mb-0 bg-white">
-          <thead class="bg-light">
+        <table className="table align-middle mb-0 bg-white">
+          <thead className="bg-light">
             <tr>
               <th>Rank</th>
               <th>Brand Name</th>
@@ -18,12 +18,13 @@ function BrandViewList() {
               <th>Return Period</th>
               <th>% for customer</th>
               <th>% for social</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td data-title="Rank">
-                <div class="d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center justify-content-center">
                   <img
                     src="https://mdbootstrap.com/img/new/avatars/8.jpg"
                     alt=""
@@ -31,29 +32,44 @@ function BrandViewList() {
                       width: "45px",
                       height: "45px",
                     }}
-                    class="rounded-circle"
+                    className="rounded-circle"
                   />
                 </div>
               </td>
               <td data-title="Brand Name">
-                <p class="fw-bold mb-1">Sublime Life</p>
+                <p className="fw-bold mb-1">Sublime Life</p>
               </td>
               <td data-title="Payout Policy">
-                <p class="fw-normal mb-1">10 days</p>
+                <p classname="fw-normal mb-1">10 days</p>
               </td>
               <td data-title="Return Period">
-                <p class="fw-normal mb-1">10 days</p>
+                <p classname="fw-normal mb-1">10 days</p>
               </td>
               <td data-title="% for customer">
-                <p class="fw-normal mb-1">10 %</p>
+                <p classname="fw-normal mb-1">10 %</p>
               </td>
               <td data-title="% for social">
-                <p class="fw-normal mb-1">10 %</p>
+                <p classname="fw-normal mb-1">10 %</p>
+              </td>
+              <td data-title="">
+                <button
+                  style={{
+                    padding: "5px 30px",
+                    borderRadius: "6px",
+                    background: "#1c5a40",
+                    border: "1px solid #1c5a40",
+                    color: "#fff",
+                  }}
+                  type="submit"
+                  id="edit-button"
+                >
+                  Edit
+                </button>
               </td>
             </tr>
             <tr>
               <td data-title="Rank">
-                <div class="d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center justify-content-center">
                   <img
                     src="https://mdbootstrap.com/img/new/avatars/6.jpg"
                     class="rounded-circle"
@@ -66,27 +82,42 @@ function BrandViewList() {
                 </div>
               </td>
               <td data-title="Brand Name">
-                <p class="fw-bold mb-1">Sublime Life</p>
+                <p className="fw-bold mb-1">Sublime Life</p>
               </td>
               <td data-title="Payout Policy">
-                <p class="fw-normal mb-1">10 days</p>
+                <p className="fw-normal mb-1">10 days</p>
               </td>
               <td data-title="Return Period">
-                <p class="fw-normal mb-1">10 days</p>
+                <p className="fw-normal mb-1">10 days</p>
               </td>
               <td data-title="% for customer">
-                <p class="fw-normal mb-1">10 %</p>
+                <p className="fw-normal mb-1">10 %</p>
               </td>
               <td data-title="% for social">
-                <p class="fw-normal mb-1">10 %</p>
+                <p className="fw-normal mb-1">10 %</p>
+              </td>
+              <td data-title="">
+                <button
+                  style={{
+                    padding: "5px 30px",
+                    borderRadius: "6px",
+                    background: "#1c5a40",
+                    border: "1px solid #1c5a40",
+                    color: "#fff",
+                  }}
+                  type="submit"
+                  id="edit-button"
+                >
+                  Edit
+                </button>
               </td>
             </tr>
             <tr>
               <td data-title="Rank">
-                <div class="d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center justify-content-center">
                   <img
                     src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-                    class="rounded-circle"
+                    className="rounded-circle"
                     alt=""
                     style={{
                       width: "45px",
@@ -96,19 +127,34 @@ function BrandViewList() {
                 </div>
               </td>
               <td data-title="Brand Name">
-                <p class="fw-bold mb-1">Sublime Life</p>
+                <p className="fw-bold mb-1">Sublime Life</p>
               </td>
               <td data-title="Payout Policy">
-                <p class="fw-normal mb-1">10 days</p>
+                <p className="fw-normal mb-1">10 days</p>
               </td>
               <td data-title="Return Period">
-                <p class="fw-normal mb-1">10 days</p>
+                <p className="fw-normal mb-1">10 days</p>
               </td>
               <td data-title="% for customer">
-                <p class="fw-normal mb-1">10 %</p>
+                <p className="fw-normal mb-1">10 %</p>
               </td>
               <td data-title="% for social">
-                <p class="fw-normal mb-1">10 %</p>
+                <p className="fw-normal mb-1">10 %</p>
+              </td>
+              <td data-title="">
+                <button
+                  style={{
+                    padding: "5px 30px",
+                    borderRadius: "6px",
+                    background: "#1c5a40",
+                    border: "1px solid #1c5a40",
+                    color: "#fff",
+                  }}
+                  type="submit"
+                  id="edit-button"
+                >
+                  Edit
+                </button>
               </td>
             </tr>
           </tbody>

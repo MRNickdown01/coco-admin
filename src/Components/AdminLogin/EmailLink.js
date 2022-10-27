@@ -79,7 +79,7 @@ function EmailLink() {
                 height: "100vh",
                 objectFit: "cover",
               }}
-              src={image}
+              src="https://ik.imagekit.io/emarpfl4e/Image__1__S_UX0c7_M.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666693498050"
               className="h-100 w-100 "
               alt="Sample image"
             />

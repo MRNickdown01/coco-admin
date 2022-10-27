@@ -103,7 +103,7 @@ const Card = () => {
               </div>
             </div>
           </div>
-          <a href="/dashboard">
+          {/* <a href="/dashboard">
             <Button
               type="button"
               backgroundColor="#92B9A8"
@@ -113,7 +113,7 @@ const Card = () => {
             >
               Dashboard
             </Button>
-          </a>
+          </a> */}
           <a href="/emaillink">
             <Button
               type="button"

@@ -2,7 +2,7 @@ import React from "react";
 import image from "./Image.png";
 import "./landing.css";
 import $ from "jquery";
-function CompleteProfile() {
+const CompleteProfile = () => {
   return (
     <div className="funny">
       <div className=" col-sm-12 col-md-6 col-lg-6 ">
@@ -137,5 +137,5 @@ function CompleteProfile() {
       </div>
     </div>
   );
-}
+};
 export default CompleteProfile;
