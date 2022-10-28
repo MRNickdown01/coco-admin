@@ -85,7 +85,7 @@ function BrandViewList() {
                       <td data-title="% for social">
                         <p class="fw-normal mb-1">{data.socialPercentage}</p>
                       </td>
-                      <td data-title="% for social">
+                      <td data-title="">
                         <button
                           style={{
                             padding: "5px 2rem",
