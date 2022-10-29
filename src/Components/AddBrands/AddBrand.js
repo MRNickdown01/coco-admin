@@ -1,7 +1,11 @@
 import { Button } from "../StyleComponent/Button.style";
 import "../AddBrands/Style.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 function Test() {
+  const location = useLocation();
+  const [message, setMessage] = useState();
   const [brand, setBrand] = useState({
     brandName: {
       value: "",
@@ -32,6 +36,35 @@ function Test() {
       error: false,
     },
   });
+
+  useEffect(() => {
+    let locParams = location.search;
+    locParams = locParams.split("?brandId=")[1];
+    console.log(locParams, "abcd");
+    if (locParams) {
+      var requestOptions = {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+      var requestOptions = {
+        method: "GET",
+        redirect: "follow",
+      };
+      fetch(
+        `http://localhost:5000/getBrandById?brandId=${locParams}`,
+        requestOptions
+      )
+        .then((response) => response.json())
+        .then((result) => console.log(result))
+        .then((result) => {
+          let data = result.brands.brandName;
+          console.log(data);
+        })
+        .catch((error) => console.log("error", error));
+    }
+  }, []);
 
   const onInputChange = (id, value) => {
     let _brand = { ...brand };
@@ -67,6 +100,7 @@ function Test() {
 
     fetch("http://coco-backend1.herokuapp.com/addBrand", requestOptions)
       .then((response) => response.text())
+      .then((result) => alert(result))
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
   }
@@ -178,6 +212,7 @@ function Test() {
                   Save
                 </Button>
               </div>
+              {message}
             </form>
           </div>
         </div>
