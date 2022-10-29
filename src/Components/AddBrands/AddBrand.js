@@ -53,7 +53,7 @@ function Test() {
         redirect: "follow",
       };
       fetch(
-        `http://localhost:5000/getBrandById?brandId=${locParams}`,
+        `http://coco-backend1.herokuapp.com/getBrandById?brandId=${locParams}`,
         requestOptions
       )
         .then((response) => response.json())
