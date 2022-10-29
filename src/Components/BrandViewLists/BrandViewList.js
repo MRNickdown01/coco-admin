@@ -85,8 +85,10 @@ function BrandViewList() {
                       <td data-title="% for social">
                         <p class="fw-normal mb-1">{data.socialPercentage}</p>
                       </td>
-                      <td data-title="">
-                        <button
+                      <td data-title="% for social">
+                        <a
+                          href={`/addbrand?brandId=${data.brandId}`}
+
                           style={{
                             padding: "5px 2rem",
                             borderRadius: "4px",
@@ -96,7 +98,7 @@ function BrandViewList() {
                           }}
                         >
                           Edit
-                        </button>
+                        </a>
                       </td>
                     </tr>
                   </tbody>
