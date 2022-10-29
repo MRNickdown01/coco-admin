@@ -88,6 +88,7 @@ function BrandViewList() {
                       <td data-title="% for social">
                         <a
                           href={`/addbrand?brandId=${data.brandId}`}
+
                           style={{
                             padding: "5px 2rem",
                             borderRadius: "4px",
