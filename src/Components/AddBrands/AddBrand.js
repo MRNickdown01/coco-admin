@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 
 function Test() {
   const location = useLocation();
-  const [message, setMessage] = useState();
+  const [brandDetails, setBrandDetails] = useState();
   const [brand, setBrand] = useState({
     brandName: {
       value: "",
@@ -41,7 +41,8 @@ function Test() {
     let locParams = location.search;
     locParams = locParams.split("?brandId=")[1];
     console.log(locParams, "abcd");
-    if (locParams) {
+
+    if (locParams.length > 0) {
       var requestOptions = {
         method: "GET",
         headers: {
@@ -52,18 +53,22 @@ function Test() {
         method: "GET",
         redirect: "follow",
       };
+
       fetch(
         `http://coco-backend1.herokuapp.com/getBrandById?brandId=${locParams}`,
         requestOptions
       )
         .then((response) => response.json())
-        .then((result) => console.log(result))
         .then((result) => {
-          let data = result.brands.brandName;
-          console.log(data);
+          let brandDetails = result.brands;
+          setBrandDetails(brandDetails);
+          console.log(brandDetails);
         })
         .catch((error) => console.log("error", error));
     }
+    // if (!brandDetails) {
+    //   return <>loading..</>;
+    // }
   }, []);
 
   const onInputChange = (id, value) => {
@@ -104,17 +109,19 @@ function Test() {
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
   }
+
   return (
     <>
       <div className="main-form mt-5">
         <div className="container">
           <h3 className="title d-flex justify-content-start mt-5 mb-5">
             Add a Brand
+            {/* {brandDetails.brandName} */}
           </h3>
           <div className="form">
             <form onSubmit={login}>
               <div className="filetype">
-                <input
+                <inputs
                   onChange={(e) => {
                     let value = e.target.value;
                     onInputChange("imagePath", value);
@@ -212,7 +219,6 @@ function Test() {
                   Save
                 </Button>
               </div>
-              {message}
             </form>
           </div>
         </div>
