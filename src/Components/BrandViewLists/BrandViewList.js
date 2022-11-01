@@ -5,17 +5,18 @@ function BrandViewList() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
+    var requestOptions = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "*/*",
+        "Access-Control-Allow-Origin": "*",
+      },
+    };
     async function login() {
       const response = await fetch(
         "https://coco-backend1.herokuapp.com/getBrands",
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "*/*",
-            "Access-Control-Allow-Origin": "*",
-          },
-        }
+        requestOptions
       );
       const result = await response.json();
       setData(result);
@@ -88,7 +89,6 @@ function BrandViewList() {
                       <td data-title="% for social">
                         <a
                           href={`/addbrand?brandId=${data.brandId}`}
-
                           style={{
                             padding: "5px 2rem",
                             borderRadius: "4px",

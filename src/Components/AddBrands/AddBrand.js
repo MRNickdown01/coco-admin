@@ -41,7 +41,7 @@ function Test() {
     let locParams = location.search;
     locParams = locParams.split("?brandId=")[1];
     console.log(locParams, "abcd");
-
+    // api call for getting brand details by id
     if (locParams) {
       var requestOptions = {
         method: "GET",
@@ -68,6 +68,8 @@ function Test() {
     }
   }, []);
 
+  //api call to update current brand
+
   const onInputChange = (id, value) => {
     let _brand = { ...brand };
     _brand[id].value = value;
@@ -75,6 +77,7 @@ function Test() {
     setBrand(_brand);
   };
 
+  //api call to  add brand
   async function login(e) {
     e.preventDefault();
     let fileInput = document.getElementById("imagefile");
@@ -126,6 +129,7 @@ function Test() {
                   type="file"
                   class="custom-file-input"
                 />
+                {/* <img src={brandDetails && brandDetails.imagePath} /> */}
               </div>
               <div className="maininput mt-5">
                 <div className="formop">
