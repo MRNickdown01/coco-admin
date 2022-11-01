@@ -42,7 +42,7 @@ function Test() {
     locParams = locParams.split("?brandId=")[1];
     console.log(locParams, "abcd");
 
-    if (locParams.length > 0) {
+    if (locParams) {
       var requestOptions = {
         method: "GET",
         headers: {
@@ -66,9 +66,6 @@ function Test() {
         })
         .catch((error) => console.log("error", error));
     }
-    // if (!brandDetails) {
-    //   return <>loading..</>;
-    // }
   }, []);
 
   const onInputChange = (id, value) => {
@@ -116,12 +113,11 @@ function Test() {
         <div className="container">
           <h3 className="title d-flex justify-content-start mt-5 mb-5">
             Add a Brand
-            {/* {brandDetails.brandName} */}
           </h3>
           <div className="form">
             <form onSubmit={login}>
               <div className="filetype">
-                <inputs
+                <input
                   onChange={(e) => {
                     let value = e.target.value;
                     onInputChange("imagePath", value);
@@ -134,6 +130,7 @@ function Test() {
               <div className="maininput mt-5">
                 <div className="formop">
                   <input
+                    value={brandDetails ? brandDetails.brandName : null}
                     onChange={(e) => {
                       let value = e.target.value;
                       onInputChange("brandName", value);
@@ -145,6 +142,7 @@ function Test() {
                 </div>
                 <div className="formop">
                   <input
+                    value={brandDetails ? brandDetails.rank : null}
                     onChange={(e) => {
                       let value = e.target.value;
                       onInputChange("rank", value);
@@ -158,6 +156,7 @@ function Test() {
               <div className="maininput mt-5">
                 <div className="formop">
                   <input
+                    value={brandDetails ? brandDetails.returnPolicy : null}
                     onChange={(e) => {
                       let value = e.target.value;
                       onInputChange("returnPolicy", value);
@@ -169,6 +168,7 @@ function Test() {
                 </div>
                 <div className="formop">
                   <input
+                    value={brandDetails ? brandDetails.payoutPolicy : null}
                     onChange={(e) => {
                       let value = e.target.value;
                       onInputChange("payoutPolicy", value);
@@ -182,6 +182,7 @@ function Test() {
               <div className="maininput mt-5">
                 <div className="formop">
                   <input
+                    value={brandDetails ? brandDetails.socialPercentage : null}
                     onChange={(e) => {
                       let value = e.target.value;
                       onInputChange("socialPercentage", value);
@@ -193,6 +194,9 @@ function Test() {
                 </div>
                 <div className="formop">
                   <input
+                    value={
+                      brandDetails ? brandDetails.customerPercentage : null
+                    }
                     onChange={(e) => {
                       let value = e.target.value;
                       onInputChange("customerPercentage", value);
@@ -205,7 +209,7 @@ function Test() {
               </div>
               <div className="maininput mt-5">
                 <div className="formop">
-                  <input type="text" required />
+                  <input type="text" />
                   <label for="">Add coupons</label>
                 </div>
               </div>
