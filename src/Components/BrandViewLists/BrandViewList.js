@@ -47,65 +47,64 @@ function BrandViewList() {
               <th></th>
             </tr>
           </thead>
-          {data
-            .map((data) => {
-              return (
-                <>
-                  <tbody>
-                    <tr key={data.brandId}>
-                      <td data-title="Rank">
-                        <div className="d-flex align-items-center justify-content-center">
-                          <h4>{data.rank}</h4>
-                        </div>
-                      </td>
-                      <td data-title="Brand">
-                        <div class="d-flex align-items-center justify-content-center">
-                          <img
-                            src={data.imagePath}
-                            alt=""
-                            style={{
-                              width: "45px",
-                              height: "45px",
-                            }}
-                            class="rounded-circle"
-                          />
-                        </div>
-                      </td>
-                      <td data-title="Brand Name">
-                        <p class="fw-bold mb-1">{data.brandName}</p>
-                      </td>
-                      <td data-title="Payout Policy">
-                        <p class="fw-normal mb-1">{data.payoutPolicy}</p>
-                      </td>
-                      <td data-title="Return Period">
-                        <p class="fw-normal mb-1">{data.returnPolicy}</p>
-                      </td>
-                      <td data-title="% for customer">
-                        <p class="fw-normal mb-1">{data.customerPercentage}</p>
-                      </td>
-                      <td data-title="% for social">
-                        <p class="fw-normal mb-1">{data.socialPercentage}</p>
-                      </td>
-                      <td data-title="% for social">
-                        <a
-                          href={`/addbrand?brandId=${data.brandId}`}
+          {data.map((data, index) => {
+            let newIndex = index + 1;
+            return (
+              <>
+                <tbody>
+                  <tr key={index}>
+                    <td data-title="Rank">
+                      <div className="d-flex align-items-center justify-content-center">
+                        <h4>{newIndex}</h4>
+                      </div>
+                    </td>
+                    <td data-title="Brand">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img
+                          src={data.imagePath}
+                          alt=""
                           style={{
-                            padding: "5px 2rem",
-                            borderRadius: "4px",
-                            color: "#fff",
-                            backgroundColor: "#1c5a40",
-                            border: "2px solid#1c5a40",
+                            width: "45px",
+                            height: "45px",
                           }}
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </>
-              );
-            })
-            .reverse()}
+                          class="rounded-circle"
+                        />
+                      </div>
+                    </td>
+                    <td data-title="Brand Name">
+                      <p class="fw-bold mb-1">{data.brandName}</p>
+                    </td>
+                    <td data-title="Payout Policy">
+                      <p class="fw-normal mb-1">{data.payoutPolicy}</p>
+                    </td>
+                    <td data-title="Return Period">
+                      <p class="fw-normal mb-1">{data.returnPolicy}</p>
+                    </td>
+                    <td data-title="% for customer">
+                      <p class="fw-normal mb-1">{data.customerPercentage}</p>
+                    </td>
+                    <td data-title="% for social">
+                      <p class="fw-normal mb-1">{data.socialPercentage}</p>
+                    </td>
+                    <td data-title="% for social">
+                      <a
+                        href={`/addbrand?brandId=${data.brandId}`}
+                        style={{
+                          padding: "5px 2rem",
+                          borderRadius: "4px",
+                          color: "#fff",
+                          backgroundColor: "#1c5a40",
+                          border: "2px solid#1c5a40",
+                        }}
+                      >
+                        Edit
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </>
+            );
+          })}
         </table>
       </div>
     </div>

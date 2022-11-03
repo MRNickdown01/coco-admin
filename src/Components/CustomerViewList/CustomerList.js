@@ -78,40 +78,36 @@ const CustomerList = () => {
             </tr>
           </thead>
           <tbody>
-            {user
-              .map((user) => {
-                let length = user.length;
-                const keys = Object.keys(user);
-                console.log(keys);
-                return (
-                  <>
-                    <tr>
-                      <td data-title="Serial">
-                        <div className="ms-3">
-                          <h6>1 {length} </h6>
-                        </div>
-                      </td>
-                      <td data-title="Customer’s Name">
-                        <p className="fw-bold mb-1">
-                          {user.fullName
-                            ? user.fullName
-                            : "profile not completed"}
-                        </p>
-                      </td>
-                      <td data-title="Email Address">
-                        <p className="fw-bold mb-1">{user.emailId}</p>
-                      </td>
-                      <td data-title="status">
-                        <FormControlLabel
-                          control={<Android12Switch defaultChecked />}
-                          label=""
-                        />
-                      </td>
-                    </tr>
-                  </>
-                );
-              })
-              .reverse()}
+            {user.map((user, index) => {
+              let newIndex = index + 1;
+              return (
+                <>
+                  <tr>
+                    <td data-title="Serial">
+                      <div className="ms-3">
+                        <h6>{newIndex} </h6>
+                      </div>
+                    </td>
+                    <td data-title="Customer’s Name">
+                      <p className="fw-bold mb-1">
+                        {user.fullName
+                          ? user.fullName
+                          : "profile not completed"}
+                      </p>
+                    </td>
+                    <td data-title="Email Address">
+                      <p className="fw-bold mb-1">{user.emailId}</p>
+                    </td>
+                    <td data-title="status">
+                      <FormControlLabel
+                        control={<Android12Switch defaultChecked />}
+                        label=""
+                      />
+                    </td>
+                  </tr>
+                </>
+              );
+            })}
           </tbody>
         </table>
       </div>
