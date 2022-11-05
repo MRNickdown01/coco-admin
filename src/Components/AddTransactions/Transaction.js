@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Input } from "../StyleComponent/Button.style";
+import { Button } from "../StyleComponent/Button.style";
 function Transaction() {
   const [show, setShow] = useState(false);
 

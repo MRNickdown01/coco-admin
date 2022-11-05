@@ -1,6 +1,41 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
 function TransactionList() {
+  const data = [
+    {
+      date: "22/08/2022",
+      lastUpdate: "25/08/2022",
+      status: "CodeGenerated",
+      name: "RomilMeghani",
+      coupounCode: "BOGO",
+      amount: "250/-",
+    },
+    {
+      date: "22/08/2022",
+      lastUpdate: "25/08/2022",
+      status: "CodeGenerated",
+      name: "RomilMeghani",
+      coupounCode: "BOGO",
+      amount: "250/-",
+    },
+    {
+      date: "22/08/2022",
+      lastUpdate: "25/08/2022",
+      status: "CodeGenerated",
+      name: "RomilMeghani",
+      coupounCode: "BOGO",
+      amount: "250/-",
+    },
+    {
+      date: "22/08/2022",
+      lastUpdate: "25/08/2022",
+      status: "CodeGenerated",
+      name: "RomilMeghani",
+      coupounCode: "BOGO",
+      amount: "250/-",
+    },
+  ];
+
   return (
     <div className="List of Transaction">
       <div className="container-fluid">
@@ -47,34 +82,18 @@ function TransactionList() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td data-title="Date">22/08/2022</td>
-              <td data-title="Last Updated">25/08/2022</td>
-              <td data-title="Status">Code generated</td>
-              <td data-title="Name">Romil Meghani</td>
-              <td data-title="Coupon Code">BOGO</td>
-              <td data-title="Amount">250/-</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td data-title="Date">22/08/2022</td>
-              <td data-title="Last Updated">25/08/2022</td>
-              <td data-title="Status">Code generated</td>
-              <td data-title="Name">Romil Meghani</td>
-              <td data-title="Coupon Code">BOGO</td>
-              <td data-title="Amount">250/-</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td data-title="Date">22/08/2022</td>
-              <td data-title="Last Updated">25/08/2022</td>
-              <td data-title="Status">Code generated</td>
-              <td data-title="Name">Romil Meghani</td>
-              <td data-title="Coupon Code">BOGO</td>
-              <td data-title="Amount">250/-</td>
-            </tr>
+            {data.map((data, index) => {
+              return (
+                <tr key={index}>
+                  <td data-title="Date">{data.date}</td>
+                  <td data-title="Last Updated">{data.lastUpdate}</td>
+                  <td data-title="Status">{data.status}</td>
+                  <td data-title="Name">{data.name}</td>
+                  <td data-title="Coupon Code">{data.coupounCode}</td>
+                  <td data-title="Amount">{data.amount}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
